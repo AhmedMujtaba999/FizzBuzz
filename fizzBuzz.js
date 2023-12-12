@@ -13,8 +13,10 @@ It's a simple yet brain-teasing game that will keep you on your toes. So, dive i
 //here's the code below
 var output=[];
 var count=1;
-function fizzbuzz(){
+function fizzbuzz() {
     
+    while(count <= 100)
+    {
     if(count%3===0&&count%5===0){
         output.push("fizzbuzz");
     }
@@ -28,8 +30,11 @@ function fizzbuzz(){
     
     else{
          output.push(count);
-    }    
+    } 
+        
     count++;
+
+}
     console.log(output);
 }
 fizzbuzz();
